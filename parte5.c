@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-    typedef struct No No;
+typedef struct No No;
 
 struct No
 {
     int valor;
     No *proximo;
-}
+};
 
 /*
  * Função auxiliar para montar a lista utilizada no exercício 5.
