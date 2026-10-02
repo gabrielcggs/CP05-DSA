@@ -1,3 +1,6 @@
+//Nomes e RMs
+//Nome: Bruno Yudi Moritaka Kanashiro. RM: 571776
+
 #include <stdio.h>
 #include <stdlib.h>
 
