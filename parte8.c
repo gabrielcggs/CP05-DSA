@@ -50,6 +50,7 @@ void imprimirLista(No *inicio) {
     printf("NULL\n");
 }
 
+//Essa e a busca.
 int buscar(No *inicio, int valor) {
     No *atual = inicio;
 
