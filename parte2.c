@@ -6,6 +6,7 @@ int somaVetor(int v[], int n)
     if (n == 0){return 0;}
 
     // Recursividade
+    // CHAMADA RECURSIVA
     return v[n - 1] + somaVetor(v, n - 1);
 }
 
@@ -15,6 +16,7 @@ int maiorVetor(int vetor[], int n)
     if (n == 1){return vetor[0];}
 
     // Encontra o maior dos elementos anteriores
+    // CHAMADA RECURSIVA
     int maior = maiorVetor(vetor, n - 1);
 
     if (vetor[n - 1] > maior){return vetor[n - 1];}
