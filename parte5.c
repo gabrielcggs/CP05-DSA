@@ -7,7 +7,7 @@ struct No
 {
     int valor;
     No *proximo;
-};
+}
 
 /*
  * Função auxiliar para montar a lista utilizada no exercício 5.
@@ -71,7 +71,7 @@ int main(void)
     /*
      * Liberação dos nós criados.
      * Não faz parte do exercício de remoção; é apenas para evitar
-     * deixar a memória alocada ao f0000000000000ograma.
+     * deixar a memória alocada ao programa.
      */
     No *atual = inicio;
     while (atual != NULL)
