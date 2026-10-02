@@ -19,6 +19,7 @@ struct No {
 No *inserirInicio(No *inicio, int valor) {
     No *novo;
 
+    // ALOCAÇÃO DO NÓ
     novo = (No *) malloc(sizeof(No));
 
     if (novo == NULL) {
@@ -27,6 +28,8 @@ No *inserirInicio(No *inicio, int valor) {
     }
 
     novo->valor = valor;
+
+    // LIGAÇÃO COM O PRÓXIMO NÓ
     novo->proximo = inicio;
 
     return novo;
@@ -35,6 +38,7 @@ No *inserirInicio(No *inicio, int valor) {
 void imprimirLista(No *inicio) {
     No *atual = inicio;
 
+    // CASO BASE: a lista está vazia, portanto não há nós para percorrer.
     if (inicio == NULL) {
         printf("A lista esta vazia.\n");
         return;
@@ -54,6 +58,7 @@ void imprimirLista(No *inicio) {
 int buscar(No *inicio, int valor) {
     No *atual = inicio;
 
+    // BUSCA: percorre a lista procurando o valor informado.
     while (atual != NULL) {
         if (atual->valor == valor) {
             return 1;
